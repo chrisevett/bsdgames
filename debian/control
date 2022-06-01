@@ -1,0 +1,31 @@
+Source: bsdgames
+Section: games
+Priority: optional
+Build-Depends: bison,
+               debhelper (>= 11~),
+               flex,
+               groff,
+               libfl-dev,
+               libncurses5-dev,
+               wamerican,
+               wbritish
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Uploaders: Dr. Tobias Quathamer <toddy@debian.org>
+Standards-Version: 4.1.4
+Vcs-Browser: https://salsa.debian.org/games-team/bsdgames
+Vcs-Git: https://salsa.debian.org/games-team/bsdgames.git
+Rules-Requires-Root: binary-targets
+
+Package: bsdgames
+Architecture: any
+Depends: wamerican | wordlist, ${misc:Depends}, ${shlibs:Depends}
+Provides: adventure
+Description: collection of classic textual unix games
+ This is a collection of some of the text-based games and amusements that
+ have been enjoyed for decades on unix systems.
+ .
+ It includes these programs: adventure, arithmetic, atc, backgammon,
+ battlestar, bcd, boggle, caesar, canfield, countmail, cribbage, dab,
+ go-fish, gomoku, hack, hangman, hunt, mille, monop, morse, number,
+ pig, phantasia, pom, ppt, primes, quiz, random, rain, robots, rot13,
+ sail, snake, tetris, trek, wargames, worm, worms, wump, wtf
